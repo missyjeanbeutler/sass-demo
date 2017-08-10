@@ -39,7 +39,8 @@ Create-React-App has great documentation that's really straight forward on imple
 
 to ```scripts```:
 
-  ```"scripts": {
+  ```
+  "scripts": {
   "build-css": "node-sass-chokidar src/ -o src/",
   "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
   "start": "react-scripts start",
@@ -58,14 +59,16 @@ to ```scripts```:
 
 6. Include the CSS preprocessor commands by changing the start and build scripts to be
 
-```"start-js": "react-scripts start",
+```
+"start-js": "react-scripts start",
 "start": "npm-run-all -p watch-css start-js",
 "build": "npm run build-css && react-scripts build",
 ```
 
 in your ```package.json```
 
-```"scripts": {
+```
+"scripts": {
   "build-css": "node-sass-chokidar src/ -o src/",
   "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
   "start-js": "react-scripts start",
