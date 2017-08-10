@@ -21,13 +21,17 @@
 }
 
 .input_container {
-  width: 20vw;
+  width: 100%;
   margin: 0 auto;
+  padding: 10px 0;
   button {
     width: 50px;
   }
   input {
-    width: calc(100% - 50px);
+    width: calc(100% - 60px);
+    margin: 0 10px 0 0;
+    height: 25px;
+    padding-left: 5px;
   }
 }
 
