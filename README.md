@@ -56,9 +56,7 @@ Create-React-App has great documentation that's really straight forward on imple
 6. Change the start and build scripts in your ```package.json``` to include the CSS preprocessor commands:
 
     **"start-js": "react-scripts start",**
-
     **"start": "npm-run-all -p watch-css start-js",**
-    
     **"build": "npm run build-css && react-scripts build",**
 
     ```"scripts": {
