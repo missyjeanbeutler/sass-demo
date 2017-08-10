@@ -1,4 +1,4 @@
-## Sass and Sass with Create-React-App
+# Sass and Sass with Create-React-App
 
 ### What is Sass?
 
@@ -35,8 +35,8 @@ Create-React-App has great documentation that's really straight forward on imple
 
     ```
    "scripts": {
-+    **"build-css": "node-sass-chokidar src/ -o src/",**
-+    **"watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",**
+     **"build-css": "node-sass-chokidar src/ -o src/",**
+     **"watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",**
      "start": "react-scripts start",
      "build": "react-scripts build",
      "test": "react-scripts test --env=jsdom",
@@ -55,11 +55,11 @@ Create-React-App has great documentation that's really straight forward on imple
     ```"scripts": {
      "build-css": "node-sass-chokidar src/ -o src/",
      "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
--    ~~"start": "react-scripts start",~~
--    ~~"build": "react-scripts build",~~
-+    **"start-js": "react-scripts start",**
-+    **"start": "npm-run-all -p watch-css start-js",**
-+    **"build": "npm run build-css && react-scripts build",**
+     ~~"start": "react-scripts start",~~
+     ~~"build": "react-scripts build",~~
+     **"start-js": "react-scripts start",**
+     **"start": "npm-run-all -p watch-css start-js",**
+     **"build": "npm run build-css && react-scripts build",**
      "test": "react-scripts test --env=jsdom",
      "eject": "react-scripts eject"
    } ``` 
