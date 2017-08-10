@@ -31,7 +31,6 @@ Create-React-App has great documentation that's really straight forward on imple
 
   ```npm install node-sass-chokidar```
 
-
 2. In ```package.json```, add the following lines 
 
   ```
@@ -51,17 +50,13 @@ Create-React-App has great documentation that's really straight forward on imple
     }
   ```   
 
-
 3. Change ```App.css``` to ```App.scss```.
 
-
 4. Remove all CSS files from the source control by adding ```src/**/*.css``` to your ```.gitignore``` file.
-
 
 5. In order to run our two scripts (build-css and watch-css) simulanteously, install the package:
 
  ```npm install npm-run-all```
-
 
 6. Include the CSS preprocessor commands by changing the start and build scripts to be
 
@@ -84,6 +79,5 @@ Create-React-App has great documentation that's really straight forward on imple
     "eject": "react-scripts eject"
   }
   ```
-
 
 7. Now when running ```npm start``` your Sass files will be included.
