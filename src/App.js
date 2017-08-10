@@ -8,7 +8,7 @@ class App extends Component {
 
     this.state = {
       userInput: '',
-      list: ['learn react', 'add animations to project', 'practice my css skills']
+      list: ['cool stuff']
     }
 
     this.handleInput = this.handleInput.bind(this);
