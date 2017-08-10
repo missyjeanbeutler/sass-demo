@@ -23,7 +23,6 @@ class App extends Component {
 
   addToList() {
     if(this.state.userInput) {
-      console.log(this.state.userInput)
       this.setState({
         list: [...this.state.list, this.state.userInput],
         userInput: ''
@@ -35,7 +34,9 @@ class App extends Component {
   render() {
 
     const todoList = this.state.list.map((item, index) => {
-            return <Item key={index} item={item}/>
+            return <Item 
+                    key={index} 
+                    item={item}/>
         })
 
     return (
