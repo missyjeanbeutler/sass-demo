@@ -33,10 +33,13 @@ Create-React-App has great documentation that's really straight forward on imple
 
 2. In ```package.json```, add the following lines to ```scripts```:
 
+    **"build-css": "node-sass-chokidar src/ -o src/",**
+    **"watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",**
+
     ```
    "scripts": {
-     **"build-css": "node-sass-chokidar src/ -o src/",**
-     **"watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",**
+     "build-css": "node-sass-chokidar src/ -o src/",
+     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
      "start": "react-scripts start",
      "build": "react-scripts build",
      "test": "react-scripts test --env=jsdom",
@@ -52,14 +55,18 @@ Create-React-App has great documentation that's really straight forward on imple
 
 6. Change the start and build scripts in your ```package.json``` to include the CSS preprocessor commands:
 
+    **"start-js": "react-scripts start",**
+    **"start": "npm-run-all -p watch-css start-js",**
+    **"build": "npm run build-css && react-scripts build",**
+
     ```"scripts": {
      "build-css": "node-sass-chokidar src/ -o src/",
      "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
      ~~"start": "react-scripts start",~~
      ~~"build": "react-scripts build",~~
-     **"start-js": "react-scripts start",**
-     **"start": "npm-run-all -p watch-css start-js",**
-     **"build": "npm run build-css && react-scripts build",**
+     "start-js": "react-scripts start",
+     "start": "npm-run-all -p watch-css start-js",
+     "build": "npm run build-css && react-scripts build",
      "test": "react-scripts test --env=jsdom",
      "eject": "react-scripts eject"
    } ``` 
