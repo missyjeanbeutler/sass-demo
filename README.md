@@ -1,7 +1,5 @@
 # Sass and Sass with Create-React-App
 
----
-
 ### What is Sass?
 
 Sass, Syntactically Awesome Style Sheets, is a css preprocessor. What is a css preprocessor? 
@@ -35,19 +33,19 @@ Create-React-App has great documentation that's really straight forward on imple
 
 2. In ```package.json```, add the following lines 
 
-    ```"build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",```
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
 
     to ```scripts```:
 
-    ```
+    
    "scripts": {
      "build-css": "node-sass-chokidar src/ -o src/",
      "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
      "start": "react-scripts start",
      "build": "react-scripts build",
      "test": "react-scripts test --env=jsdom",
-     ```  
+   } 
 
 3. Change ```App.css``` to ```App.scss```.
 
@@ -59,22 +57,22 @@ Create-React-App has great documentation that's really straight forward on imple
 
 6. Include the CSS preprocessor commands by changing the start and build scripts to be
 
-    ```"start-js": "react-scripts start",
+    "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build",```
+    "build": "npm run build-css && react-scripts build",
 
     in your ```package.json```
 
-    ```"scripts": {
-     "build-css": "node-sass-chokidar src/ -o src/",
-     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-     ~~"start": "react-scripts start",~~
-     ~~"build": "react-scripts build",~~
-     "start-js": "react-scripts start",
-     "start": "npm-run-all -p watch-css start-js",
-     "build": "npm run build-css && react-scripts build",
-     "test": "react-scripts test --env=jsdom",
-     "eject": "react-scripts eject"
-   } ``` 
+    "scripts": {
+      "build-css": "node-sass-chokidar src/ -o src/",
+      "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+      ~~"start": "react-scripts start",~~
+      ~~"build": "react-scripts build",~~
+      "start-js": "react-scripts start",
+      "start": "npm-run-all -p watch-css start-js",
+      "build": "npm run build-css && react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
 
 7. Now when running ```npm start``` your Sass files will be included.
