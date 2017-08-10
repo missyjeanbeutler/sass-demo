@@ -17,7 +17,7 @@ There are many different css preprocessors so what are some of the benefits of u
 
 This can often be confusing as to what the difference is. They are in fact both Sass... the language that is. But in this case, they are different syntaxes of the language Sass.
 
-Sass or style.sass is an older form of Sass syntax also known as *the indented syntax*. It doesn't use curly braces but instead uses indenting to show nesting. It also has some shorter syntax than SCSS such as = instead of @mixin. 
+Sass or style.sass is an older form of Sass syntax also known as *the indented syntax*. It doesn't use curly braces but instead uses indenting to show nesting. It also doesn't use semicolons. It also has some shorter syntax than SCSS such as = instead of @mixin. 
 
 SCSS or style.scss is more similar to regular CSS syntax plus some extras. Unlike Sass, it uses curly braces and valid CSS syntax can be easily converted to SCSS by simply changing the file extension. 
 

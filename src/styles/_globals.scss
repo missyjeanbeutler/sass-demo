@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Quicksand');
+@import 'variables';
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+}
+
+
+p, a, div, button {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: $background;
+}

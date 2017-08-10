@@ -1,0 +1,24 @@
+.main_container {
+  width: 450px;
+  background: white;
+  margin: 50px auto;
+  padding: 100px;
+  h1 {
+    text-align: center;
+  }
+}
+
+.input_container {
+  width: 20vw;
+  margin: 0 auto;
+  button {
+    width: 50px;
+  }
+  input {
+    width: calc(100% - 50px);
+  }
+}
+
+.list_container {
+  width: 30vw;
+}
