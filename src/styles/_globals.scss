@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface:300|Open+Sans:300');
 @import 'variables';
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  font: {
+    family: 'Abril Fatface';
+    size: 40px;
+  }
 }
 
 
 p, a, div, button {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font: {
+    family: 'Open Sans', sans-serif;
+    size: 16px;
+  }
 }
 
 body {
-  background: $background;
+  background: $light;
 }

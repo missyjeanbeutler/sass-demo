@@ -40,9 +40,9 @@ class App extends Component {
         })
 
     return (
-      <div className="main_container">
+      <div className='outer_container'>
         <h1> TO DO LIST</h1>
-
+      <div className="main_container">
         <div className='input_container'>
           <input 
           placeholder='Add a new item...' 
@@ -55,6 +55,7 @@ class App extends Component {
         <div className='list_container'>
           { todoList }
         </div>
+      </div>
         
       </div>
     );
